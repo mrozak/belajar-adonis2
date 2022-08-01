@@ -19,6 +19,11 @@ Route.on('/').render('welcome')
 
 // Route.get('/testing', () => 'hello word').as('get.hellow');
 
-Route.get('/adonis', 'BelajarAdonisController.index');
-Route.post('/adonis/create', 'BelajarAdonisController.create');
-Route.put('/adonis/update', 'BelajarAdonisController.update');
+// Route.get('/adonis', 'BelajarAdonisController.index');
+// Route.post('/adonis/create', 'BelajarAdonisController.create');
+// Route.put('/adonis/update', 'BelajarAdonisController.update');
+
+
+Route.get('/', 'BukuController.index');
+Route.get('/daftar-buku', 'BukuController.daftarBuku');
+Route.get('/input-buku', 'BukuController.inputBuku');
